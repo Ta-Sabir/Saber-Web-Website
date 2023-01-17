@@ -557,7 +557,7 @@ button:disabled {
 }
 @media (max-width: 767px) {
   .landing .iamgeLanding img {
-    width: 280px;
+    width: 360px;
   }
 }
 @media (max-width: 300px) {
