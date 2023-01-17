@@ -206,6 +206,9 @@ button:disabled {
   background-color: var(--bg-drak);
   box-shadow: 1px 5px 3px #ddd;
 }
+.eng .dark .menu-box {
+  box-shadow: 0.5px 0px 0px #ddd;
+}
 .menu-box.open {
   right: 0;
 }
@@ -514,7 +517,7 @@ button:disabled {
   }
 }
 .eng .landing .contentLanding h3 {
-  font-size: 25px;
+  font-size: 24px;
 }
 .landing .contentLanding h3 span {
   color: var(--main-color);
