@@ -12,7 +12,7 @@ https://ta-sabir.github.io/Saber-Web-Website/
 
 
 ## 🔗 Links
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/talhaoui-saber-214106262/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saber-talhaoui-214106262/)
 
 
 
