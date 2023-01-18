@@ -407,7 +407,7 @@ button:disabled {
 .header li a {
   font-size: 16px;
   color: black;
-  padding: 5px;
+  padding: 15px;
   transition: var(--main-transition);
 }
 .header li a:hover{
