@@ -410,11 +410,11 @@ button:disabled {
   padding: 15px;
   transition: var(--main-transition);
 }
-.header li a:hover{
-  color: var(--main-color);
-}
 .dark .header li a {
   color: var(--white-color);
+}
+.header li a:hover{
+  color: var(--main-color);
 }
 /* Start Icon Dark Mode */
 .headerBox {
