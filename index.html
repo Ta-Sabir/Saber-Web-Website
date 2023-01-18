@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="h3logo">صابر ويب</title>
+    <link rel="icon" href="Images/icon.png" />
+    <!--Render All Nlements Normaly -->
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <!--Font Awsome Library-->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- Main Templete Css File -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/prices.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body dir="rtl">
+    <!-- Start Loader Section -->
+    <div class="loader">
+      <div class="container-loader">
+        <svg class="gegga">
+          <defs>
+            <filter id="gegga">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="7"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+                result="inreGegga"
+              />
+              <feComposite in="SourceGraphic" in2="inreGegga" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+        <svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+          <defs>
+            <linearGradient id="linjärGradient">
+              <stop class="stopp1" offset="0" />
+              <stop class="stopp2" offset="1" />
+            </linearGradient>
+            <linearGradient
+              y2="160"
+              x2="160"
+              y1="40"
+              x1="40"
+              gradientUnits="userSpaceOnUse"
+              id="gradient"
+              xlink:href="#linjärGradient"
+            />
+          </defs>
+          <path
+            class="halvan"
+            d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64"
+          />
+          <circle class="strecken" cx="100" cy="100" r="64" />
+        </svg>
+      </div>
+    </div>
+    <div class="loaderSection">
+      <div class="topLoader"></div>
+      <div class="bottomLoader"></div>
+    </div>
+    <!-- End Loader Section -->
+    <!-- Start Menu Box -->
+    <div class="menu-box">
+      <a href="#landing" class="logo">
+        <i class="fa-solid fa-code logoIcon"></i>
+        <h3 data-lang="h3logo">صابر ويب</h3>
+      </a>
+      <ul class="menu-links">
+        <li><a href="#landing" data-lang="alanding"> الرئيسية</a></li>
+        <li><a href="#why-saber" data-lang="awhysaber">لماذا نحن ؟</a></li>
+        <li><a href="#work" data-lang="awork">كيف نعمل ؟</a></li>
+        <li><a href="#register" data-lang="aregist">كيف أسجل ؟</a></li>
+        <li><a href="#services" data-lang="aserv"> خدماتنا</a></li>
+        <li><a href="#portfolio" data-lang="aportfolio"> معرض أعمالنا</a></li>
+        <li><a href="#team" data-lang="ateam"> فريقنا</a></li>
+        <li><a href="#testimonials" data-lang="atest">أراء عملاءنا</a></li>
+        <li><a href="#prices" data-lang="aprice">الأسعار</a></li>
+        <li><a href="#contact-me" data-lang="acontact">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <!-- End Menu Box -->
+    <!-- Start Settings Menu -->
+    <div id="circularMenu1" class="circular-menu circular-menu-left">
+      <a
+        class="floating-btn"
+        onclick="document.getElementById('circularMenu1').classList.toggle('active');"
+      >
+        <i class="fa-solid fa-globe"></i>
+      </a>
+      <menu class="items-wrapper">
+        <a class="menu-item IconLang" data-language="eng"> Eng </a>
+        <a class="menu-item IconLang" data-language="ar"> Arab </a>
+      </menu>
+    </div>
+    <!-- End Settings Menu -->
+    <!-- Start Header Section -->
+    <div class="header">
+      <div class="container">
+        <a href="#landing" class="logo">
+          <i class="fa-solid fa-code logoIcon"></i>
+          <h3 data-lang="h3logo">صابر ويب</h3>
+        </a>
+        <ul class="links">
+          <li><a href="#landing" data-lang="alanding"> الرئيسية</a></li>
+          <li><a href="#work" data-lang="awork">كيف نعمل ؟</a></li>
+          <li><a href="#services" data-lang="aserv"> خدماتنا</a></li>
+          <li><a href="#portfolio" data-lang="aportfolio"> معرض أعمالنا</a></li>
+          <li><a href="#prices" data-lang="aprice">الأسعار</a></li>
+          <li><a href="#contact-me" data-lang="acontact">تواصل معنا</a></li>
+        </ul>
+        <!-- Start icon dark Mode -->
+        <div class="headerBox">
+          <div class="toggleDark">
+            <div class="flicker"></div>
+            <div for="togglebtn">
+              <i class="fa-solid fa-sun sun icon"></i>
+              <i class="fa-solid fa-moon moon icon"></i>
+            </div>
+          </div>
+          <div class="menu-icon" id="menu">
+            <div class="menu-bar">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End icon dark Mode -->
+    </div>
+    <!-- End Header Section -->
+    <!-- Start Landing Page -->
+    <div class="landing" id="landing">
+      <div class="container">
+        <div class="contentLanding">
+          <h3 data-lang="h3Landing">
+            <span>صابر ويب </span>خيارك لتصميم و إنشاء المواقع الإلكترونية !
+          </h3>
+          <p data-lang="pLanding">
+            الآن حان الوقت لتتخذ القرار بإنشاء موقعك الإلكتروني الخاص بمجال عملك
+            . ماذا تنتظر وفر الجهد و قم بتصميم و إنشاء موقعك
+          </p>
+          <div class="iamgeLanding">
+            <img src="Images/landing.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+    <!-- Start Number Section -->
+    <div class="number">
+      <div class="container">
+        <div class="number-boxs">
+          <div class="number-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h3 data-lang="Requests">الطلبات</h3>
+            </div>
+            <span class="num" data-num="400">000</span>
+          </div>
+          <div class="number-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-users"></i>
+              <h3 data-lang="clients">العملاء</h3>
+            </div>
+            <span class="num" data-num="400">000</span>
+          </div>
+          <div class="number-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-people-group"></i>
+              <h3 data-lang="partners">الشركاء</h3>
+            </div>
+            <span class="num" data-num="400">000</span>
+          </div>
+          <div class="number-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-globe"></i>
+              <h3 data-lang="site">موقع إلكتروني</h3>
+            </div>
+            <span class="num" data-num="400">000</span>
+          </div>
+          <div class="number-box">
+            <div class="icon-box">
+              <i class="fa-brands fa-sketch"></i>
+              <h3 data-lang="designui">تصميم UI/UX</h3>
+            </div>
+            <span class="num" data-num="400">000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Number Section -->
+    <!-- Start Why Saber Web -->
+    <div class="why-saber" id="why-saber">
+      <div class="main-title">
+        <h2 class="title" data-lang="titlewhysab">لماذا صابر ويب ؟</h2>
+        <p class="pargraph" data-lang="pwhysab">
+          لماذا تختار موقع صابر ويب لخدمتك ؟
+        </p>
+      </div>
+      <div class="container">
+        <div class="why-boxs">
+          <div class="why-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="content-box">
+              <h3 data-lang="h3push">طرق دفع متعددة</h3>
+              <p data-lang="ppush">
+                توفر عدة طرق للدفع لجميع العملاء في مختلف بقاع العالم من خلال
+                الطرق البنكية التقليدية أو عن طريق البنوك الاٍلكترونية , أو من
+                خلال الفيزا
+              </p>
+            </div>
+          </div>
+          <div class="why-box active">
+            <div class="icon-box">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <div class="content-box">
+              <h3 data-lang="h3money">إسترداد النقود</h3>
+              <p data-lang="pmoney">
+                يمكنك طلب استرداد الأموال خلال 7 أيام من تاريخ الشراء , إذا كان
+                الموقع الإلكتروني لا يعمل، يمكنك طلب استرداد المبالغ المدفوعة في
+                أي وقت
+              </p>
+            </div>
+          </div>
+          <div class="why-box">
+            <div class="icon-box">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="content-box">
+              <h3 data-lang="h3speed">سرعة الموقع</h3>
+              <p data-lang="pspeed">
+                نحن نقدم أفضل تجربة أداء يشعر بها المستخدم من الهدوء والإستقرار
+                داخل موقعك مع تلبية طلبك في أسرع وقت مع الاٍطلاع على المشروع
+                خطوة بخطوة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="why-image">
+          <img src="Images/why.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Why Saber Web -->
+    <!-- Start How Do We Work -->
+    <div class="work" id="work">
+      <div class="main-title">
+        <h2 class="title" data-lang="titlework">كيف نعمل في صابر ويب ؟</h2>
+        <p class="pargraph" data-lang="pwork">تعرف كيف يعمل موقع صابر ويب</p>
+      </div>
+      <div class="container">
+        <div class="work-image">
+          <img src="Images/work.png" alt="" />
+        </div>
+        <div class="work-boxs">
+          <div class="work-box">
+            <i class="fa-solid fa-1"></i>
+            <div class="work-icon">
+              <i class="fa-brands fa-shopify"></i>
+              <h3 data-lang="titlepackage">إختيار الباقة والمنصة</h3>
+            </div>
+            <p data-lang="ppackage">
+              تبدأ خدماتنا من عند العميل حيث يختار الباقة المناسبة لخدماته ولغة
+              البرمجة والمنصة التي سيتم تنفيذ تصميم الموقع عليها
+            </p>
+          </div>
+          <div class="work-box active">
+            <i class="fa-solid fa-2"></i>
+            <div class="work-icon">
+              <i class="fa-solid fa-print"></i>
+              <h3 data-lang="titleanalysis">التحليل الأولي و تحديد السعر</h3>
+            </div>
+            <p data-lang="panalysis">
+              العمل على تحليل كافة التفاصيل مع العميل للوصول بها إلى كافة
+              إحتياجات وطموحات العميل من أجل تحقيقها على الواقع
+            </p>
+          </div>
+          <div class="work-box">
+            <i class="fa-solid fa-3"></i>
+            <div class="work-icon">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3 data-lang="titleproject">تنفيذ المشروع</h3>
+            </div>
+            <p data-lang="pproject">
+              العمل على تصميم واجهة الإستخدام وتجربة المستخدم مع الاهتمام الكامل
+              بإحترافية التصميم ودقة إختيار الألوان
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End How Do We Work -->
+    <!-- Start How do I register -->
+    <div class="register" id="register">
+      <div class="main-title">
+        <h2 class="title" data-lang="titleregister">كيف أسجل ؟</h2>
+        <p class="pargraph" data-lang="pregister">
+          تعرف على كيفية التسجيل في موقع صابر ويب
+        </p>
+      </div>
+      <div class="container">
+        <div class="how-image">
+          <img src="Images/regist.png" />
+        </div>
+        <div class="how-boxs">
+          <h3 data-lang="h3howreg">
+            هيا بنا بضع خطوات سهلة للتسجيل في صابر ويب !
+          </h3>
+          <p data-lang="phowreg">
+            إتبع الخطوات للتسجيل للإنطلاق في البحث عن عملاء
+          </p>
+          <div class="how-box">
+            <div class="how-boxs-numb">
+              <div class="how-box-numb">1</div>
+              <div class="how-box-numb-line"></div>
+              <div class="how-box-numb">2</div>
+              <div class="how-box-numb-lineDashed"></div>
+              <div class="how-box-numb">3</div>
+              <div class="how-box-numb-line"></div>
+              <div class="how-box-numb">4</div>
+            </div>
+            <div class="how-boxs-content">
+              <div class="how-box-content" data-lang="reg1">
+                قم بالتسجيل أولا و ذلك باٍنشاء حساب جديد بملئ المعلومات المطلوبة
+              </div>
+              <div class="how-box-numb-line active"></div>
+              <div class="how-box-content" data-lang="reg2">
+                قم بتأكيد هويتك مع ملئ معلومات ملفك الشخصي
+              </div>
+              <div class="how-box-numb-lineDashed active"></div>
+              <div class="how-box-content" data-lang="reg3">
+                إنتظر قبول حسابك من فريق الدعم
+              </div>
+              <div class="how-box-numb-line active"></div>
+              <div class="how-box-content" data-lang="reg4">
+                بعد قبول حسابك إنطلق في البحث عن عملاء للعمل معهم
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End How do I register -->
+    <!-- Start Our services Section -->
+    <div class="services" id="services">
+      <div class="main-title">
+        <h2 class="title" data-lang="titleserv">خدماتنا</h2>
+        <p class="pargraph" data-lang="pserv">تعرف على خدماتنا</p>
+      </div>
+      <div class="container">
+        <div class="services-boxs">
+          <div class="service-box">
+            <i class="fa-solid fa-palette"></i>
+            <h3 data-lang="serv1">تصميم المواقع</h3>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-shop"></i>
+            <h3 data-lang="serv2">برمجة المتاجر الالكترونية</h3>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-globe"></i>
+            <h3 data-lang="serv3">برمجة صفحات الهبوط</h3>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-star"></i>
+            <h3 data-lang="serv4">تصميم صفحات الهبوط</h3>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-mobile"></i>
+            <h3 data-lang="serv5">تصميم وبرمجة التطبيقات</h3>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-brands fa-slack"></i>
+            <h3 data-lang="serv6">تصميم شعار وهوية</h3>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our services Section -->
+    <!-- Start Portfolio Section -->
+    <div class="portfolio" id="portfolio">
+      <div class="main-title">
+        <h2 class="title" data-lang="titleportf">معرض أعمالنا</h2>
+        <p class="pargraph" data-lang="pportf">
+          من أعمالنا في تصميم و اٍنشاء المواقع
+        </p>
+      </div>
+      <div class="container">
+        <div class="projects-box">
+          <div class="project-box">
+            <div class="content-project-box">
+              <img src="Images/project -1.jpg" alt="" />
+              <h3 data-lang="port1">
+                موقع " أكاديمية مُعلم " منصة تعليمية إفتراضية
+              </h3>
+              <h4 data-lang="tools">التقنيات المستعملة:</h4>
+              <div class="tools">
+                <a href="">Html</a>
+                <a href="">css</a>
+                <a href="">javaScript</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="Images/muha-ajjan-sL2BRR1cuvM-unsplash.jpg" alt="" />
+            <h3 data-lang="port2">تصميم و إنشاء موقع مطعم (Fast Food)</h3>
+            <h4 data-lang="tools">التقنيات المستعملة:</h4>
+            <div class="tools">
+              <a href="">Html</a>
+              <a href="">css</a>
+              <a href="">javaScript</a>
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="Images/project-3.jpg" alt="" />
+            <h3 data-lang="port3">تصميم و اٍنشاء صفحة هبوط (landing page)</h3>
+            <h4 data-lang="tools">التقنيات المستعملة:</h4>
+            <div class="tools">
+              <a href="">Html</a>
+              <a href="">css</a>
+              <a href="">javaScript</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Portfolio Section -->
+    <!-- Start Team Section -->
+    <div class="team" id="team">
+      <div class="main-title">
+        <h2 class="title" data-lang="titleteam">فريقنا</h2>
+        <p class="pargraph" data-lang="pteam">تعرف على أعضاء فريقنا الرائعين</p>
+      </div>
+      <div class="container">
+        <div class="team-boxs">
+          <div class="team-box">
+            <img src="Images/teacher-4.png" alt="" />
+            <h3 data-lang="team1">طلحاوي صابر - مطور واجهات الويب</h3>
+            <div class="rate">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="social-media">
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="Images/teacher-6.png" alt="" />
+            <h3 data-lang="team2">طلحاوي صابر - مصمم UI / UX</h3>
+            <div class="rate">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="social-media">
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="Images/teacher-5.png" alt="" />
+            <h3 data-lang="team3">طلحاوي صابر - مطور ويب</h3>
+            <div class="rate">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="social-media">
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="Images/teacher-3.png" alt="" />
+            <h3 data-lang="team4">طلحاوي صابر - مطور ألعاب</h3>
+            <div class="rate">
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="filled fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="social-media">
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Team Section -->
+    <!-- Satrt Testimonials Section -->
+    <div class="testimonials" id="testimonials">
+      <div class="main-title">
+        <h2 class="title" data-lang="titletest">أراء عملائنا</h2>
+        <p class="pargraph" data-lang="ptest">شاهد أراء عملائنا</p>
+      </div>
+      <div class="container">
+        <div class="testimonials-box">
+          <div class="testimonial-box">
+            <i class="fa-solid fa-quote-left quotIcon-left"></i>
+            <i class="fa-solid fa-quote-right quotIcon-right"></i>
+            <div class="testimonial-profile">
+              <img src="Images/teacher-3.png" alt="" />
+              <h3 data-lang="team1">طلحاوي صابر - مطور واجهات الويب</h3>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p data-lang="ptest1">
+                من أفضل المواقع في تصميم و اٍنشاء المواقع ، نشكر الإدارة ساعدتنا
+                كثيرا ومعاملتهم في غاية الراحة
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-box active">
+            <i class="fa-solid fa-quote-left quotIcon-left"></i>
+            <i class="fa-solid fa-quote-right quotIcon-right"></i>
+            <div class="testimonial-profile">
+              <img src="Images/teacher-4.png" alt="" />
+              <h3 data-lang="team2">طلحاوي صابر - مصمم UI / UX</h3>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p data-lang="ptest2">
+                موقع صابر ويب من أفضل مواقع التصميم و برمجة المواقع أنصح الجميع
+                بالتعامل معهم يتميزون بالعمل المتقن
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <i class="fa-solid fa-quote-left quotIcon-left"></i>
+            <i class="fa-solid fa-quote-right quotIcon-right"></i>
+            <div class="testimonial-profile">
+              <img src="Images/teacher-7.png" alt="" />
+              <h3 data-lang="test3">طلحاوي صابر - صاحب متجر اٍلكتروني</h3>
+              <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p data-lang="ptest3">
+                أنا سعيد جدا بالتعامل مع موقع صابر ويب لتصميم و اٍنشاء المواقع
+                لقد نفذوا ماطلبته بكل احترافية
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials Section -->
+    <!-- Start prices Section -->
+    <div class="prices" id="prices">
+      <div class="main-title">
+        <h2 class="title" data-lang="titleprices">الأسعار</h2>
+        <p class="pargraph" data-lang="pprices">
+          نوفر مجموعة من الباقات تناسب جميع العملاء لدينا
+        </p>
+      </div>
+      <div class="container">
+        <div class="year-price">
+          <span href="" class="year active" data-lang="year">سنوي</span>
+          <span href="" class="month" data-lang="month">شهري</span>
+        </div>
+        <div class="prices-box">
+          <div class="price-box">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3 data-lang="personal">شخصي</h3>
+            <ul>
+              <li data-lang="liprice1">دومين مجانا</li>
+              <li data-lang="liprice2">استضافة <bdi>900</bdi> ميجا</li>
+              <li data-lang="liprice3">البريد الالكتروني <bdi>10</bdi></li>
+              <li data-lang="liprice4">الموقع <bdi>10</bdi> صفحات</li>
+              <li data-lang="liprice5">لغة واحدة عربي أو انجليزي</li>
+              <li data-lang="liprice6">متوافق مع جميع أحجام الشاشات</li>
+              <li data-lang="liprice7">ربط الموقع بمواقع التواصل</li>
+              <li data-lang="liprice8">تهيئة الموقع لمحركات البحث</li>
+              <li data-lang="liprice9">لوحة تحكم للموقع</li>
+            </ul>
+            <span>500$</span>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="price-box active-box">
+            <i class="fa-solid fa-user"></i>
+            <h3 data-lang="mutual">مشترك</h3>
+            <ul>
+              <li data-lang="liprice1">دومين مجانا</li>
+              <li data-lang="liprice2">استضافة <bdi>900</bdi> ميجا</li>
+              <li data-lang="liprice3">البريد الالكتروني <bdi>10</bdi></li>
+              <li data-lang="liprice4">الموقع <bdi>10</bdi> صفحات</li>
+              <li data-lang="liprice5">لغة واحدة عربي أو انجليزي</li>
+              <li data-lang="liprice6">متوافق مع جميع أحجام الشاشات</li>
+              <li data-lang="liprice7">ربط الموقع بمواقع التواصل</li>
+              <li data-lang="liprice8">تهيئة الموقع لمحركات البحث</li>
+              <li data-lang="liprice9">لوحة تحكم للموقع</li>
+            </ul>
+            <span>600$</span>
+            <a class="btn active" data-lang="booknow">احجز الآن</a>
+          </div>
+          <div class="price-box">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3 data-lang="personal">شخصي</h3>
+            <ul>
+              <li data-lang="liprice1">دومين مجانا</li>
+              <li data-lang="liprice2">استضافة <bdi>900</bdi> ميجا</li>
+              <li data-lang="liprice3">البريد الالكتروني <bdi>10</bdi></li>
+              <li data-lang="liprice4">الموقع <bdi>10</bdi> صفحات</li>
+              <li data-lang="liprice5">لغة واحدة عربي أو انجليزي</li>
+              <li data-lang="liprice6">متوافق مع جميع أحجام الشاشات</li>
+              <li data-lang="liprice7">ربط الموقع بمواقع التواصل</li>
+              <li data-lang="liprice8">تهيئة الموقع لمحركات البحث</li>
+              <li data-lang="liprice9">لوحة تحكم للموقع</li>
+            </ul>
+            <span>700$</span>
+            <a class="btn" data-lang="booknow">احجز الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End prices Section -->
+    <!-- Start Download Section -->
+    <div class="download">
+      <div class="container">
+        <div class="down-content">
+          <h3 data-lang="titledown">حمل تطبيق صابر ويب الآن</h3>
+          <p data-lang="pdown">
+            إعرف التكلفة الإجمالية لطلبك شاملة الشحن والتوصيل، ثم أتمم عملية
+            الشراء وإدفع الطلب بواسطة وسائل الدفع المتاحة على تطبيقنا
+          </p>
+          <div class="down-btn">
+            <div>
+              <div class="content-btn">
+                <span data-lang="btndown">حمله الان من </span>
+              </div>
+              <i class="fa-brands fa-google-play"></i>
+            </div>
+            <div>
+              <div class="content-btn">
+                <span data-lang="btndown">حمله الان من </span>
+              </div>
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </div>
+        </div>
+        <img src="Images/download image.png" alt="" />
+      </div>
+    </div>
+    <!-- End Download Section -->
+    <!-- Start Blog Section -->
+    <div class="blog">
+      <div class="main-title">
+        <h2 class="title" data-lang="titleblog">مدونة صابر ويب</h2>
+        <p class="pargraph" data-lang="pblog">
+          تعرف أكثر على موقع صابر ويب من خلال المدونة
+        </p>
+      </div>
+      <div class="container">
+        <div class="blog-box">
+          <div class="blog-box-image">
+            <h4 data-lang="hblog1">ماهو موقع صابر ويب ؟</h4>
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+          <div class="blog-box-text">
+            <div class="icon">
+              <i class="fa-solid fa-code logoIcon"></i>
+            </div>
+            <div class="content">
+              <h3 data-lang="h3logo">صابر ويب</h3>
+              <span data-lang="spblog">01/01/2023 . 3 مليون مشاهدة</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box">
+          <div class="blog-box-image">
+            <h4 data-lang="hblog2">من هو منشئ موقع صابر ويب ؟</h4>
+            <ion-icon name="construct-outline"></ion-icon>
+          </div>
+          <div class="blog-box-text">
+            <div class="icon">
+              <i class="fa-solid fa-code logoIcon"></i>
+            </div>
+            <div class="content">
+              <h3 data-lang="h3logo">صابر ويب</h3>
+              <span data-lang="spblog">21/08/2022 . 2 مليون مشاهدة</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box">
+          <div class="blog-box-image">
+            <h4 data-lang="hblog3">كيف يمكنني التواصل مع صابر ويب</h4>
+            <ion-icon name="mail-open-outline"></ion-icon>
+          </div>
+          <div class="blog-box-text">
+            <div class="icon">
+              <i class="fa-solid fa-code logoIcon"></i>
+            </div>
+            <div class="content">
+              <h3 data-lang="h3logo">صابر ويب</h3>
+              <span data-lang="spblog">25/05/2050 . 1 مليون مشاهدة</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box">
+          <div class="blog-box-image">
+            <h4 data-lang="hblog4">ماهي وسائل الدفع في صابر ويب ؟</h4>
+            <ion-icon name="server-outline"></ion-icon>
+          </div>
+          <div class="blog-box-text">
+            <div class="icon">
+              <i class="fa-solid fa-code logoIcon"></i>
+            </div>
+            <div class="content">
+              <h3 data-lang="h3logo">صابر ويب</h3>
+              <span data-lang="spblog">01/01/2004 . 10 مليون مشاهدة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Section -->
+    <!-- Start Contact Me Section -->
+    <div class="contact-me" id="contact-me">
+      <div class="main-title">
+        <h2 class="title" data-lang="titlecontact">تواصل معنا</h2>
+        <p class="pargraph" data-lang="pcontact">
+          نحن في انتظارك طول الوقت يمكنك ارسال الرسالة وسيتم الرد عليك خلال
+          اليوم
+        </p>
+      </div>
+      <div class="container">
+        <form method="post">
+          <div class="input-box" data-lang="usercontac">
+            <input class="input" type="text" placeholder="إسم المستخدم" />
+          </div>
+          <div class="input-box" data-lang="emailcontact">
+            <input
+              class="input"
+              type="email"
+              placeholder="عنوان البريد الالكتروني"
+            />
+          </div>
+          <span data-lang="messagecontac">
+            <input class="message" type="text" placeholder="عنوان الرسالة" />
+          </span>
+          <span data-lang="textreacontact">
+            <textarea
+              style="margin-top: 18px"
+              class="my-input"
+              cols="30"
+              rows="10"
+              placeholder="الرسالة"
+            ></textarea>
+          </span>
+          <a data-lang="btnsend" class="btn send-btn">اٍرسال</a>
+        </form>
+        <div class="socialmedia">
+          <h2 data-lang="socialmedia">مواقع التواصل الاجتماعي</h2>
+          <div class="links">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/saber_ta02/?igshid=NDRkN2NkYzU%3D"
+              >Talhaoui Saber <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://web.facebook.com/profile.php?id=100089441044390"
+              >طلحاوي صابر - Saber Web<i class="fa-brands fa-facebook"></i
+            ></a>
+            <a target="_blank" href="https://github.com/Ta-Sabir">
+              Ta-Sabir<i class="fa-brands fa-github"></i
+            ></a>
+            <a href="mailto:talhaoui.sabir@gmail.com?subject=contact"
+              >talhaoui.sabir@gmail.com<i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/talhaoui-saber-214106262/"
+            >
+              Talhaoui Saber <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Me Section -->
+    <!-- Start Footer Section -->
+    <div class="footer">
+      <div class="container">
+        <div class="title-footer">
+          <div class="logo">
+            <i class="fa-solid fa-code logoIcon"></i>
+            <h3 data-lang="h3logo">صابر ويب</h3>
+          </div>
+          <div class="p-title">
+            <p data-lang="ptitlefooter">
+              يسعى موقع صابر ويب إلى تغيير مفهوم تصميم المواقع وبرمجة المواقع
+              بشكل خاص وحلول المواقع بشكل عام وذلك من خلال تقديم خدمة متنوعة
+              وعروض مناسبة لجميع الأفراد والشركات بأحدث التقنيات وأفضل جودة
+              وأسرع وقت مع كل ذلك تأتي الأمانة والصدق والوضوح مع العملاء مع
+              إمكانية تقسيط الدفع
+            </p>
+          </div>
+          <div class="social-media">
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="" target="_blank">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="links">
+          <h3 class="title-links" data-lang="linksfooter">روابط مختصرة</h3>
+          <ul>
+            <li><a href="#landing" data-lang="alanding"> الرئيسية</a></li>
+            <li><a href="#why-saber" data-lang="awhysaber">لماذا نحن ؟</a></li>
+            <li><a href="#work" data-lang="awork">كيف نعمل ؟</a></li>
+            <li><a href="#register" data-lang="aregist">كيف أسجل ؟</a></li>
+            <li><a href="#services" data-lang="aserv"> خدماتنا</a></li>
+            <li>
+              <a href="#portfolio" data-lang="aportfolio"> معرض أعمالنا</a>
+            </li>
+            <li><a href="#team" data-lang="ateam"> فريقنا</a></li>
+            <li><a href="#testimonials" data-lang="atest">أراء عملاءنا</a></li>
+            <li><a href="#prices" data-lang="aprice">الأسعار</a></li>
+            <li><a href="#contact-me" data-lang="acontact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="twasol">
+          <h3 class="title-links" data-lang="titletwasol">تواصل معنا</h3>
+          <div class="contacts">
+            <div class="contac">
+              <i class="fa-solid fa-envelope"></i>
+              <p>talhaoui.sabir@gmail.com</p>
+            </div>
+            <div class="contac">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <p>+21323456789</p>
+            </div>
+            <div class="contac">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+              <p data-lang="algeriaschl">الجزائر . ولاية الشلف</p>
+            </div>
+            <div class="contac">
+              <i class="far fa-clock fa-fw"></i>
+              <p data-lang="timework">أوقات العمل : كل يوم / 24 ساعة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p class="copyright" data-lang="copyright">
+          جميع الحقوق محفوظة لموقع صابر ويب © <span>2023</span>
+        </p>
+        <form action="" class="form-search">
+          <span data-lang="emailright">
+            <input type="search" placeholder="ادخل بريدك الإلكتروني" />
+          </span>
+          <span data-lang="sendright">
+            <input type="submit" value="إرسال" />
+          </span>
+        </form>
+      </div>
+    </div>
+    <!-- End Footer Section -->
+    <!-- Satrt Icon Scrool Top -->
+    <a href="#landing" class="icon-top">
+      <div class="iconsrccoltop">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+    </a>
+    <!-- End Icon Scrool Top -->
+    <!-- Start Made With Section -->
+    <div class="made">
+      <p data-lang="madewith">
+        تم تصميم و إنشاء هذا الموقع من طرف طلحاوي صابر 💜
+      </p>
+    </div>
+    <!-- End Made With Section -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="JavaScript/lang.js"></script>
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
