@@ -66,6 +66,15 @@ input:focus {
     width: 1170px;
   }
 }
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
 button:disabled {
   opacity: 0.7;
   cursor: not-allowed !important;
