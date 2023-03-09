@@ -90,7 +90,7 @@ window.onload = () => {
     loader.style.display = "none";
     topLoader.classList.add("open");
     bottomLoader.classList.add("open");
-  }, 2000);
+  }, 500);
 };
 // Change The Language 
 let IconLang = document.querySelectorAll(".IconLang");
